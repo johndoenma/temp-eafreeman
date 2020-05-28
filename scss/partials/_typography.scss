@@ -1,0 +1,70 @@
+/* BODY */
+body {
+    font-family: $serif-fontfamily;
+    font-size: 100%;
+    line-height: 1.4;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+/* HEADINGS */
+h1,
+h2,
+h3 {
+}
+
+h1 {
+    @include serif-fontrules;
+    font-size: 3.5em;
+}
+
+h2 {
+    @include sans-fontrules;
+    font-size: 1.5em;
+}
+
+h3 {
+    @include serif-fontrules;
+    font-size: 1em;
+}
+
+h4 {
+    @include sans-fontrules;
+    font-size: 1em;
+}
+
+p {
+    font-family: $serif-fontfamily;
+    font-size: 0.9em;
+    max-width: 27em;
+    line-height: 1.4;
+    color: $color-darkgrey;
+}
+
+.site-navigation li {
+    @include sans-fontrules;
+    @include li-rules;
+    font-weight: 300;
+    font-size: 1em;
+    color: $color-midgrey;
+    font-family: $sans-fontfamily;
+}
+
+li {
+    @include sans-fontrules;
+    @include li-rules;
+    font-family: $sans-fontfamily;
+    font-weight: 200;
+    list-style: none;
+    color: $color-darkgrey;
+}
+
+a {
+    @include sans-fontrules;
+    @include li-rules;
+    font-family: $sans-fontfamily;
+    font-weight: 200;
+    list-style: none;
+    color: $color-darkgrey;
+    text-decoration: none;
+    color: $color-midgrey;
+}

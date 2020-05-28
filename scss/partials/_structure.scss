@@ -1,0 +1,38 @@
+/* SITE-FOOTER */
+.site-footer {
+  border: 1px solid red;
+  background-color: $color-black;
+  height: 50vh;
+  width: 100vw;
+  margin: 0;
+  // padding: 1em;
+  display: flex;
+  justify-content: flex-end;
+  align-content: flex-end;
+  // position: absolute;
+  bottom: 0;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  p {
+    color: white;
+    font-weight: 200;
+  }
+}
+
+// .contact-info {
+//   position: absolute;
+//   border: 1px solid orange;
+//   bottom: -500px;
+//   left: 3vw;
+// }
+
+.info {
+  border: 1px solid red;
+  position: absolute;
+  right: 2.5vw;
+  bottom: 2.5;
+  text-align: right;
+}

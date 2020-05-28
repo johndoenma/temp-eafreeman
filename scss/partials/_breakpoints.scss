@@ -1,0 +1,23 @@
+
+
+@media (min-width: $breakpoint-small) {
+    body {
+        font-size: 100%;
+    }
+}
+
+@media (min-width: $breakpoint-medium) {
+    .container {
+
+    }
+}
+
+@media (min-width: $breakpoint-large) {
+    body {
+        font-size: 112.5%;
+    }
+    .container {
+        max-width: 1200px; ;
+    }
+}
+

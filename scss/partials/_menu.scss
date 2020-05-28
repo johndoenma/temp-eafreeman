@@ -1,0 +1,118 @@
+.site-header {
+    min-height: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-header h1 {
+    font-family: $sans-fontfamily;
+    @include sans-fontrules;
+    font-size: 1.2em;
+    letter-spacing: 0.5em;
+    position: absolute;
+    top: 2.25vw;
+    left: 45%;
+    z-index: 1000;
+    padding: 0;
+}
+
+.site-nav li a:hover {
+    color: rgba(0, 0, 0, 1);
+}
+
+.site-header .site-nav {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: grid;
+    ul {
+        display: inline-block;
+        position: absolute;
+        // justify-content: space-evenly;
+        transform: rotate(-90deg) translate(-100%);
+        transform-origin: top left;
+        width: 100vh;
+        margin-top: 0;
+        list-style: none;
+        padding-top: 5vw;
+        padding-left: 15vw;
+        padding-bottom: 30vw;
+    }
+    li {
+        float: left;
+        opacity: 0;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    &.active {
+        position: absolute;
+        z-index: 10000;
+        ul {
+            background: white;
+            transition: all 0.4s cubic-bezier(0, 1, 1, 1);
+        }
+        li {
+            opacity: 0.9;
+            transition: all 0.4s cubic-bezier(0, 1, 1, 1);
+            transform: translateY(0);
+            opacity: 1;
+
+            &:nth-child(1) {
+                transition-delay: 1s;
+            }
+            &:nth-child(2) {
+                transition-delay: 0.8s;
+            }
+            &:nth-child(3) {
+                transition-delay: 0.6s;
+            }
+            &:nth-child(4) {
+                transition-delay: 0.4s;
+            }
+            &:nth-child(5) {
+                transition-delay: 1.2s;
+            }
+            &:nth-child(6) {
+                transition-delay: 1.4s;
+            }
+        }
+        a {
+            display: block;
+        }
+    }
+}
+
+/* MENU BUTTON */
+.menu-button {
+    position: absolute;
+    top: 3.5vw;
+    left: 3.5vw;
+    width: 2em;
+    height: 1.75em;
+    overflow: hidden;
+    z-index: 1000000;
+    cursor: pointer;
+
+    &:before {
+        display: inline-block;
+        font-size: 1.25em;
+        width: 1.5em;
+        height: 1.5em;
+        content: "\2630";
+        transform: rotate(90deg);
+        // content: url(../img/Hamburger20.png);
+    }
+}
+
+.active .menu-button.navicon:before {
+    content: "\2630";
+    // content: url(../img/Hamburger.2.png);
+    transform: rotate(180deg);
+    transition: 0.4s all ease-out;
+    .hover-bars {
+        justify-content: flex-start;
+    }
+}

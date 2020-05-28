@@ -1,0 +1,72 @@
+.hover-bars {
+    width: 100vw;
+    height: 100vh;
+    padding-top: 2em;
+    display: flex;
+    // justify-content: center;
+    justify-content: flex-end;
+    padding-right: 10vw;
+    position: relative;
+
+    .hover-text {
+        position: absolute;
+        bottom: 6vw;
+        left: 6vw;
+        z-index: -1;
+    }
+
+    .jones {
+        background-image: url(../img/jones_models.jpg);
+    }
+
+    .luis {
+        background-image: url(../img/Luis_Home_Hover.png);
+    }
+
+    .scene {
+        background-image: url(../img/Scene_Home.png);
+    }
+
+    .riopele {
+        background-image: url(../img/riopele.png);
+    }
+
+    .sedaris {
+        background-image: url(../img/sedaris.all.png);
+    }
+
+    .untitled {
+        background-image: url(../img/untitled_1.jpg);
+    }
+
+    .hover-grow {
+        width: 60px;
+        display: block;
+        background-size: cover;
+        background-position: center center;
+        /* Ease in & out */
+        transition: 0.4s cubic-bezier(1, 0, 0, 1) all;
+        /* Ease in */
+        // transition: 0.2s cubic-bezier(0, 1, 1, 1) all;
+        /* Ease out */
+        // transition: 0.4s cubic-bezier(0, 0, 1, 0) all;
+        opacity: 70%;
+        .title {
+            opacity: 0;
+            position: absolute;
+            bottom: 6vw;
+            left: 6vw;
+        }
+
+        &:hover {
+            background-position: center;
+            background-size: cover;
+            width: 35vw;
+            opacity: 100%;
+            .title {
+                opacity: 1;
+                transition: 0.4s all ease-out;
+            }
+        }
+    }
+}

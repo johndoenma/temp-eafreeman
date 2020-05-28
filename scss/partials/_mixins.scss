@@ -1,0 +1,19 @@
+
+@mixin sans-fontrules {
+    font-family: $sans-fontfamily;
+    text-transform: uppercase;
+    letter-spacing: .13em;
+    font-weight: normal;
+    color: $color-text-body; 
+}
+
+@mixin serif-fontrules {
+    font-family: $serif-fontfamily;
+    font-weight: normal;
+    color: $color-text-body; 
+}
+
+@mixin li-rules {
+    list-style: none;
+}
+
