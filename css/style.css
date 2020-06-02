@@ -512,11 +512,19 @@ section {
   justify-content: flex-end;
   height: 80vh; }
   .emilynav-wrapper .navbox {
+    position: relative;
     -webkit-transition: all ease-in-out 1s;
     -o-transition: all ease-in-out 1s;
     transition: all ease-in-out 1s;
     width: 33.3333%;
-    height: 80vh; }
+    height: 100%; }
+  .emilynav-wrapper .image-holder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border: 1px solid red; }
 
 .page-work .emilynav-wrapper {
   display: -webkit-box;

@@ -17,9 +17,22 @@
 
   .navbox {
     // border: 10px solid red;
+    position: relative;
     transition: all ease-in-out 1s;
     width: 33.3333%;
-    height: 80vh;
+    height: 100%;
+  }
+
+  .image-holder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border: 1px solid red;
+
+    img {
+    }
   }
 
   // .navbox1 {
