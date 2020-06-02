@@ -500,38 +500,61 @@ section {
 
 .emilynav-wrapper {
   position: relative;
-  padding-top: 3em;
-  -webkit-transition: all ease-in-out 1s;
-  -o-transition: all ease-in-out 1s;
-  transition: all ease-in-out 1s;
+  padding-top: 5em;
+  -webkit-transition: all ease-in-out .5s;
+  -o-transition: all ease-in-out .5s;
+  transition: all ease-in-out .5s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  height: 80vh; }
+  height: 60vh; }
   .emilynav-wrapper .navbox {
     position: relative;
-    -webkit-transition: all ease-in-out 1s;
-    -o-transition: all ease-in-out 1s;
-    transition: all ease-in-out 1s;
+    -webkit-transition: all ease-in-out .5s;
+    -o-transition: all ease-in-out .5s;
+    transition: all ease-in-out .5s;
     width: 33.3333%;
-    height: 100%; }
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat; }
+  .emilynav-wrapper .navbox1 {
+    background-image: url(../img/luis.home.png); }
+  .emilynav-wrapper .navbox2 {
+    background-image: url(../img/riopele.png); }
+  .emilynav-wrapper .navbox3 {
+    background-image: url(../img/scene.home.png); }
+  .emilynav-wrapper .navbox4 {
+    background-image: url(../img/jones.ipad.png); }
+  .emilynav-wrapper .navbox5 {
+    background-image: url(../img/sedaris.all.png); }
+  .emilynav-wrapper .title-holder {
+    position: absolute;
+    left: 1em;
+    bottom: 1em; }
   .emilynav-wrapper .image-holder {
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
-    right: 0;
-    border: 1px solid red; }
+    right: 0; }
+    .emilynav-wrapper .image-holder img {
+      display: none; }
+
+.page-home .emilynav-wrapper .title-holder {
+  display: none; }
 
 .page-work .emilynav-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
   .page-work .emilynav-wrapper .navbox {
-    width: 5%; }
+    width: 5%;
+    background-size: auto; }
+  .page-work .emilynav-wrapper .title-holder {
+    display: none; }
 
 .page-sub .navbox1,
 .page-sub .navbox2,
@@ -744,9 +767,9 @@ section {
     max-width: 1200px; } }
 
 .transition-fade {
-  -webkit-transition: 2s;
-  -o-transition: 2s;
-  transition: 2s;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
   opacity: 1; }
 
 html.is-animating .transition-fade {
