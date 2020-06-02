@@ -1,0 +1,40 @@
+.hover-bars {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  position: relative; }
+  .hover-bars .hover-text {
+    background: pink;
+    position: absolute;
+    bottom: 4vw;
+    left: 4vw;
+    z-index: -1; }
+  .hover-bars .jones {
+    background-image: url(../img/Luis_Home_Hover.png); }
+  .hover-bars .luis {
+    background-color: orange; }
+  .hover-bars .scene {
+    background-color: blue; }
+  .hover-bars .hover-grow {
+    width: 5vw;
+    display: block;
+    background-size: cover;
+    background-position: center center;
+    /* Ease in & out */
+    -webkit-transition: 0.4s cubic-bezier(1, 0, 0, 1) all;
+    -o-transition: 0.4s cubic-bezier(1, 0, 0, 1) all;
+    transition: 0.4s cubic-bezier(1, 0, 0, 1) all;
+    /* Ease in */
+    /* Ease out */
+    opacity: 20%;
+    text-transform: uppercase; }
+    .hover-bars .hover-grow:hover {
+      background-position: left center;
+      width: 60vw;
+      opacity: 100%;
+      text-transform: lowercase; }

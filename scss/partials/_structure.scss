@@ -1,0 +1,48 @@
+.sticky {
+  display: flex;
+  // justify-content: flex-end;
+  position: sticky;
+  top: 0; //need for setting position
+  width: 100%;
+  align-items: left;
+  z-index: 100;
+  margin: 0;
+  padding: 0;
+  img {
+    width: 100px;
+  }
+}
+
+/* SITE-FOOTER */
+.site-footer {
+  background-color: $color-black;
+  min-height: 50vh;
+  width: 100vw;
+  margin: 0;
+  bottom: 0;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  p {
+    color: white;
+    font-weight: 200;
+  }
+
+  .info {
+    border: 1px solid red;
+    position: absolute;
+    // justify-content: flex-end;
+    right: 2.5vw;
+    // bottom: 0.5;
+    text-align: right;
+    // height: 200px;
+  }
+
+  #form {
+    border: 1px solid blue;
+    position: absolute;
+    left: 2.5vw;
+  }
+}

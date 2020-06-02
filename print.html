@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title> Emily Freeman's Portfolio </title>
+    <meta name="description" content="Multi page portfolio site" />
+
+    <!-- VIEWPORT FOR MOBILE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- ADOBE CSS -->
+    <link rel="stylesheet" href="https://use.typekit.net/apn8enz.css">
+
+    <!-- MAIN CSS -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="site-identity">
+            <h1><a href="index.html">Emily Freeman</a></h1>
+        </div>
+        <nav class="site-navigation">
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="print.html">Print</a></li>
+                <li><a href="web.html">Web</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <div id="collection-h" class="h-collection-menu">
+            <div class="h-view">
+                <div class="h-content">
+
+                    <div class="h-body">
+                        <!-- <div class="info grow hover">
+                            <div>
+                                <h1>print</h1>
+                                <p>Design | Print Collateral</p>
+                            </div>
+                        </div> -->
+
+                        <a href="riopele.html" href="/riopele" class="grow riopele"><img src="img/luis.jpg"></a>
+                        <a href="sedaris.html" href="/sedaris" class="grow sedaris">sedaris</a>
+                        <a href="palate.html" href="/palate" class="grow palate">palate</a>
+                        <a href="parallax.html" href="/parallax" class="grow parallax">parallax</a>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <section class="site-footer" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="column one-half">
+                    <h3>eafreeman.com</h3>
+                    <h3>emily@eafreeman.com</h3>
+                    <h4>Honolulu | O'ahu | Hawai'i </h4>
+                </div>
+                <div class="column one-half">
+                    <div id="form">
+                        <form action="https://formspree.io/estroupe@hawaii.edu" method="POST">
+                            <label>name</label>
+                            <input type='text' name="name" class="name" tabinex=1 />
+
+                            <label>email</label>
+                            <input type='text' name="email" class="email" tabinex=2 />
+
+                            <label>phone</label>
+                            <input type='text' name="email" class="email" tabinex=3 />
+
+                            <label>message</label>
+                            <textarea name="message" tabinex=4></textarea>
+
+                            <input type="submit" name="submit" value="send" class="submit" tabinex=4>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SMOOTH SCROLL JS -->
+    <!-- <script src="js/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+    </script> -->
+
+    <!-- SCROLL OUT SCROLL TRIGGERED ANIMATION -->
+    <!-- <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <script>
+        ScrollOut(
+            {
+                threshold: 0.4
+            }
+        );
+    </script> -->
+
+    <!-- MAIN JS -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

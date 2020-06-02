@@ -1,0 +1,32 @@
+// // BOX SIZING
+* {
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    display: grid;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section {
+    margin: 0;
+    padding-top: 10vh;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 50vh;
+}
+
+.container {
+    width: 100vw;
+    margin: 0 auto;
+    padding: 2em;
+}

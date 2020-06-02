@@ -1,0 +1,149 @@
+.slider-container {
+  position: relative;
+  height: 100%;
+  width: 100%; }
+
+.slide {
+  z-index: 1;
+  margin-right: 90px;
+  margin-left: -60px;
+  background-attachment: 110%;
+  -webkit-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out; }
+
+#slider-nav {
+  position: absolute;
+  right: -70px;
+  top: 50%;
+  z-index: 1000;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg); }
+
+.next-btn,
+.prev-btn {
+  position: relative;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 100;
+  color: white;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#000), color-stop(50%, #000), color-stop(50%, #fff), to(#fff));
+  background-image: -webkit-linear-gradient(top, #000, #000 50%, #fff 50%, #fff);
+  background-image: -o-linear-gradient(top, #000, #000 50%, #fff 50%, #fff);
+  background-image: linear-gradient(to bottom, #000, #000 50%, #fff 50%, #fff);
+  background-position: 0 0;
+  background-size: 100% 200%;
+  padding: 30px 40px;
+  margin-left: -5px;
+  -webkit-box-sizing: padding-box;
+  box-sizing: padding-box;
+  cursor: pointer;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  min-width: 70px;
+  text-align: center;
+  text-transform: uppercase; }
+
+.next-btn {
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg); }
+
+.prev-btn:after {
+  content: "";
+  width: 1px;
+  height: 55px;
+  background-color: white;
+  position: absolute;
+  bottom: -35px;
+  margin: 0 auto;
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out; }
+
+.next-btn:after {
+  content: "";
+  width: 1px;
+  height: 55px;
+  background-color: white;
+  position: absolute;
+  top: -35px;
+  margin: 0 auto;
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out; }
+
+.prev-btn:hover:after {
+  bottom: -20px;
+  height: 40px;
+  background-color: black; }
+
+.next-btn:hover:after {
+  top: -20px;
+  height: 40px;
+  background-color: black; }
+
+.next-btn:hover,
+.prev-btn:hover {
+  background-position: 0 100%;
+  color: black; }
+
+.prev-btn p,
+.next-btn p {
+  padding: 0;
+  margin: 0; }
+
+.next-btn p {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+
+h1 {
+  color: white;
+  font-family: serif;
+  font-weight: 200;
+  font-size: 50px;
+  vertical-align: middle; }
+
+div.box--1 {
+  height: 100vh;
+  background: url("https://source.unsplash.com/category/nature");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+  vertical-align: middle; }
+
+.box--2 {
+  height: 100vh;
+  background: url("https://source.unsplash.com/category/buildings");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+  vertical-align: middle; }
+
+.box--3 {
+  height: 100vh;
+  background: url("https://source.unsplash.com/category/people");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+  vertical-align: middle; }
+
+.box--verse p {
+  color: white;
+  font-weight: 100;
+  font-size: 13px;
+  line-height: 1.6em; }
+
+.box--verse {
+  width: 300px;
+  background-color: black;
+  padding: 30px;
+  position: absolute;
+  bottom: -30px;
+  z-index: 2500; }

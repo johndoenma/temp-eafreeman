@@ -1,0 +1,96 @@
+/* BODY */
+body {
+    font-family: $serif-fontfamily;
+    font-size: 100%;
+    line-height: 1.4;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+/* HEADINGS */
+h1,
+h2,
+h3 {
+}
+
+h1 {
+    @include serif-fontrules;
+    font-size: 3.5em;
+    font-weight: 100;
+    color: $color-darkgrey;
+}
+
+h2 {
+    @include sans-fontrules;
+    font-size: 1.5em;
+    max-width: 550px;
+    margin: 0;
+}
+
+h3 {
+    @include serif-fontrules;
+    font-size: 1em;
+    max-width: 550px;
+    margin-top: 0em;
+    margin-bottom: 0.5em;
+}
+
+h4 {
+    @include sans-fontrules;
+    font-size: 0.9em;
+    letter-spacing: 0.25em;
+}
+
+p {
+    font-family: $serif-fontfamily;
+    font-size: 0.9em;
+    max-width: 550px;
+    line-height: 1.4;
+    color: $color-darkgrey;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+}
+
+ul {
+    margin: 0;
+}
+
+li {
+    @include sans-fontrules;
+    @include li-rules;
+    font-family: $sans-fontfamily;
+    font-weight: 200;
+    list-style: none;
+    color: $color-darkgrey;
+}
+
+.site-nav li {
+    @include sans-fontrules;
+    @include li-rules;
+    font-weight: 300;
+    font-size: 1em;
+    color: $color-midgrey;
+    font-family: $sans-fontfamily;
+}
+li {
+    p {
+        color: pink;
+    }
+}
+a {
+    @include sans-fontrules;
+    @include li-rules;
+    font-family: $sans-fontfamily;
+    font-weight: 200;
+    list-style: none;
+    color: $color-darkgrey;
+    text-decoration: none;
+    color: $color-midgrey;
+}
+
+hr {
+    width: 50px;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 1em;
+    border-width: 2px;
+}

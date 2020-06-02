@@ -1,0 +1,89 @@
+// See structure for positioning
+
+#form {
+    width: 450px;
+    margin: 0;
+}
+
+#form label {
+    display: block;
+    float: left;
+    min-width: 95px;
+    width: 25%;
+    border: 0px;
+    @include sans-fontrules;
+    color: white;
+    font-size: 1em;
+}
+
+#form input {
+    display: block;
+    float: left;
+    border: 0px;
+    width: 75%;
+    @include serif-fontrules;
+    color: white;
+    padding: 5px;
+    margin-bottom: 10px;
+    opacity: 50%;
+    // background-color: rgba(255, 255, 225, 1);
+    // border: 1px solid red;
+}
+::placeholder {
+    text-align: right;
+}
+
+// #form textarea {
+//     display: block;
+//     float: left;
+//     border: 0px;
+//     width: 75%;
+//     height: 140px;
+//     color: white;
+//     padding: 5px;
+//     resize: none;
+//     border-bottom: 1px solid white;
+// }
+
+// #form input.message {
+//     display: block;
+//     float: left;
+//     border: 0px;
+//     width: 330px;
+//     height: 140px;
+//     color: white;
+//     padding: 5px;
+//     resize: none;
+//     border-bottom: 1px solid white;
+// }
+
+#form input.name,
+#form input.email,
+#form input.phone,
+#form input.message {
+    background: no-repeat 10px 8px;
+    opacity: 1;
+    // border-bottom: 1px solid white;
+}
+
+#form input.submit {
+    cursor: pointer;
+    width: 90px;
+    height: 40px;
+    float: right;
+    padding: 5px 5px 5px 5px;
+    margin: 10px 0px 0px 95px;
+    background-color: $color-black;
+    @include sans-fontrules;
+    color: white;
+    // background: rgb(204, 203, 203);
+    // color: black;
+    border: 1px solid white;
+    // @include sans-fontrules;
+    font-size: 0.95em;
+    line-height: 1.2em;
+    font-weight: 100;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    border-radius: 0;
+}

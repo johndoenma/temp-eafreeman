@@ -1,0 +1,96 @@
+.hover-bars-footer {
+    width: 100vw;
+    height: 50vh;
+    .hover-grow {
+        width: 2vw;
+        &:hover {
+            width: 20vw;
+        }
+    }
+}
+
+.hover-bars {
+    width: 100vw;
+    height: 100vh;
+    .hover-grow {
+        width: 5vw;
+        &:hover {
+            width: 35vw;
+        }
+    }
+}
+
+.hover-bars-footer,
+.hover-bars {
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+
+    .hover-text {
+        position: absolute;
+        bottom: 6vh;
+        left: 5vw;
+        z-index: -1;
+
+        h1 {
+            margin-bottom: 2vh;
+        }
+    }
+
+    .jones {
+        background-image: url(../img/jones_models.jpg);
+    }
+
+    .luis {
+        background-image: url(../img/Luis_Home_Hover.png);
+    }
+
+    .scene {
+        background-image: url(../img/Scene_Home.png);
+    }
+
+    .riopele {
+        background-image: url(../img/riopele.png);
+    }
+
+    .sedaris {
+        background-image: url(../img/sedaris.all.png);
+    }
+
+    .untitled {
+        background-image: url(../img/untitled_1.jpg);
+    }
+
+    .hover-grow {
+        display: block;
+        background-size: cover;
+        background-position: center center;
+        /* Ease in & out */
+        transition: 0.4s cubic-bezier(1, 0, 0, 1) all;
+        /* Ease in */
+        // transition: 0.2s cubic-bezier(0, 1, 1, 1) all;
+        /* Ease out */
+        // transition: 0.4s cubic-bezier(0, 0, 1, 0) all;
+        opacity: 70%;
+        .title {
+            opacity: 0;
+            position: absolute;
+            bottom: 6vh;
+            left: 5vw;
+            background: white;
+        }
+
+        &:hover {
+            background-position: center;
+            background-size: cover;
+            opacity: 100%;
+            .title {
+                opacity: 1;
+                transition: 0.4s all ease-out;
+            }
+        }
+    }
+}
