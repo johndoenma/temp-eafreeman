@@ -500,46 +500,45 @@ section {
 
 .emilynav-wrapper {
   position: relative;
-  padding-top: 3em; }
-  .emilynav-wrapper .navbox {
-    border: 1px solid red; }
-
-.page-home .emilynav-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-
-.page-work .emilynav-wrapper {
+  padding-top: 3em;
+  -webkit-transition: all ease-in-out 1s;
+  -o-transition: all ease-in-out 1s;
+  transition: all ease-in-out 1s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
-  justify-content: flex-end; }
-  .page-work .emilynav-wrapper .navbox {
-    width: 5vw; }
+  justify-content: flex-end;
+  height: 80vh; }
+  .emilynav-wrapper .navbox {
+    -webkit-transition: all ease-in-out 1s;
+    -o-transition: all ease-in-out 1s;
+    transition: all ease-in-out 1s;
+    width: 33.3333%;
+    height: 80vh; }
 
-.page-sub .emilynav-wrapper {
-  display: block; }
+.page-work .emilynav-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .page-work .emilynav-wrapper .navbox {
+    width: 5%; }
 
 .page-sub .navbox1,
 .page-sub .navbox2,
 .page-sub .navbox4 {
   width: 0;
-  height: 0;
   overflow: hidden; }
 
 .page-sub.page-luis .navbox1 {
-  width: 100vw;
-  height: 50vh; }
+  width: 100%; }
 
 .page-sub.page-rio .navbox2 {
-  width: 100vw;
-  height: 50vh; }
+  width: 100%; }
 
 .page-sub.page-jones .navbox4 {
-  width: 100vw;
-  height: 50vh; }
+  width: 100%; }
 
 .site-header {
   min-height: 0;
