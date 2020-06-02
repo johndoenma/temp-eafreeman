@@ -1,42 +1,40 @@
 #form {
     width: 450px;
-    // margin: 15px 0;
     margin: 0;
-    left: 0;
-    display: inline-block;
-    // float: right;
-    border: 1px solid red;
+    position: absolute;
+    left: 2.5vw;
 }
 
 #form label {
     display: block;
     float: left;
-    width: 95px;
+    min-width: 95px;
+    width: 25%;
     border: 0px;
     @include sans-fontrules;
     color: white;
     font-size: 1em;
-    // text-align: right;
-    /* text-align: left; */
 }
 
 #form input {
     display: block;
     float: left;
     border: 0px;
-    width: 330px;
+    width: 75%;
     @include serif-fontrules;
     color: white;
     padding: 5px;
     margin-bottom: 10px;
     opacity: 50%;
+    // background-color: rgba(255, 255, 225, 1);
+    // border: 1px solid red;
 }
 
 #form textarea {
     display: block;
     float: left;
     border: 0px;
-    width: 330px;
+    width: 75%;
     height: 140px;
     color: white;
     padding: 5px;
@@ -44,6 +42,7 @@
 }
 
 #form input.message {
+    display: block;
     float: left;
     border: 0px;
     width: 330px;
@@ -65,19 +64,20 @@
 #form textarea {
     background: no-repeat 10px 8px;
     opacity: 1;
+    border-bottom: 1px solid white;
 }
 
 #form input.submit {
     cursor: pointer;
-    width: 85px;
-    height: 30px;
-    float: left;
+    width: 90px;
+    height: 40px;
+    float: right;
     padding: 5px 5px 5px 5px;
     margin: 10px 0px 0px 95px;
     background: rgb(204, 203, 203);
     color: black;
-    font-family: freight-sans-condensed-pro, sans-serif;
-    font-size: 0.75em;
+    @include sans-fontrules;
+    font-size: 0.95em;
     line-height: 1.2em;
     font-weight: 100;
     letter-spacing: 0.25em;

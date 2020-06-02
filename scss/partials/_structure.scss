@@ -1,15 +1,24 @@
+.sticky {
+  display: flex;
+  // justify-content: flex-end;
+  position: sticky;
+  top: 0; //need for setting position
+  width: 100%;
+  align-items: left;
+  z-index: 100;
+  margin: 0;
+  padding: 0;
+  img {
+    width: 100px;
+  }
+}
+
 /* SITE-FOOTER */
 .site-footer {
-  border: 1px solid red;
   background-color: $color-black;
-  height: 50vh;
+  min-height: 50vh;
   width: 100vw;
   margin: 0;
-  // padding: 1em;
-  display: flex;
-  justify-content: flex-end;
-  align-content: flex-end;
-  // position: absolute;
   bottom: 0;
 
   h1,
@@ -20,19 +29,12 @@
     color: white;
     font-weight: 200;
   }
-}
 
-// .contact-info {
-//   position: absolute;
-//   border: 1px solid orange;
-//   bottom: -500px;
-//   left: 3vw;
-// }
-
-.info {
-  border: 1px solid red;
-  position: absolute;
-  right: 2.5vw;
-  bottom: 2.5;
-  text-align: right;
+  .info {
+    position: absolute;
+    right: 2.5vw;
+    bottom: 0.5;
+    text-align: right;
+    height: 200px;
+  }
 }

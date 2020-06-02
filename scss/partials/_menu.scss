@@ -6,15 +6,17 @@
 }
 
 .site-header h1 {
-    font-family: $sans-fontfamily;
     @include sans-fontrules;
-    font-size: 1.2em;
-    letter-spacing: 0.5em;
+    font-size: 1em;
+    line-height: 1em;
+    letter-spacing: 0.35em;
     position: absolute;
-    top: 2.25vw;
-    left: 45%;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+    top: 1.5em;
+    right: 2em;
     z-index: 1000;
-    padding: 0;
 }
 
 .site-nav li a:hover {
@@ -30,15 +32,11 @@
     ul {
         display: inline-block;
         position: absolute;
-        // justify-content: space-evenly;
         transform: rotate(-90deg) translate(-100%);
         transform-origin: top left;
         width: 100vh;
-        margin-top: 0;
         list-style: none;
-        padding-top: 5vw;
-        padding-left: 15vw;
-        padding-bottom: 30vw;
+        margin-left: 2vw;
     }
     li {
         float: left;
@@ -51,11 +49,11 @@
         position: absolute;
         z-index: 10000;
         ul {
-            background: white;
+            // background: white;
             transition: all 0.4s cubic-bezier(0, 1, 1, 1);
+            padding-bottom: 37vw;
         }
         li {
-            opacity: 0.9;
             transition: all 0.4s cubic-bezier(0, 1, 1, 1);
             transform: translateY(0);
             opacity: 1;
@@ -88,29 +86,30 @@
 /* MENU BUTTON */
 .menu-button {
     position: absolute;
-    top: 3.5vw;
-    left: 3.5vw;
-    width: 2em;
-    height: 1.75em;
+    top: 1.25em;
+    left: 1.2em;
+    width: 1.25em;
+    height: 1.25em;
     overflow: hidden;
     z-index: 1000000;
     cursor: pointer;
+    align-items: center;
+    font-size: 1.25em;
+    text-align: center;
+    transform-origin: center center;
 
     &:before {
         display: inline-block;
-        font-size: 1.25em;
-        width: 1.5em;
-        height: 1.5em;
+        width: 1.25em;
+        height: 1.25em;
         content: "\2630";
-        transform: rotate(90deg);
-        // content: url(../img/Hamburger20.png);
     }
 }
 
 .active .menu-button.navicon:before {
     content: "\2630";
-    // content: url(../img/Hamburger.2.png);
-    transform: rotate(180deg);
+    transform-origin: center center;
+    transform: rotate(-90deg);
     transition: 0.4s all ease-out;
     .hover-bars {
         justify-content: flex-start;

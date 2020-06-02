@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title> Emily Freeman's Portfolio </title>
+    <meta name="description" content="Multi page portfolio site" />
+
+    <!-- VIEWPORT FOR MOBILE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- ADOBE CSS -->
+    <link rel="stylesheet" href="https://use.typekit.net/apn8enz.css">
+
+    <!-- MAIN CSS -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <header class="site-header">
+        <a href="index.html">
+            <h1>Emily Freeman</h1>
+        </a>
+        <nav class="site-nav">
+            <div class="menu-button navicon">Menu</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about/index.html">About</a></li>
+                <li><a href="work.html">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <section class="subhead">
+
+            <div class="row">
+                <div class="column one-third">
+                    <div class="subtitle">
+                        <h1>Identifying an opportunity in
+                            Honolulu’s social scene</h1>
+                        <h2>scene</h2>
+                    </div>
+
+                </div>
+                <div class="column two-thirds">
+                    <img src="img/scene_home2.jpg" alt="">
+                </div>
+            </div>
+            </div>
+
+        </section>
+
+        <div class="sticky">
+            <img src="img/arrowxl.png" alt="Placeholder">
+        </div>
+
+        <section class="objective">
+
+            <div class="row">
+                <div class="column one-third">
+                    <ul>
+                        <li>Client | <i>City of Honolulu</i></li>
+                        <li>Industry | <i>Music, Food, Art</i></li>
+                        <li>Design | <i>Web</i></li>
+                        <!-- <li>Solution | <i>brand identity</i></li> -->
+                    </ul>
+                </div>
+                <div class="column two-thirds">
+                    <h3>
+                        Assigned to develop a mobile application that allows consumers to search, save, and be
+                        notified of local events.</h3>
+                    <!-- <hr> -->
+                    <p>
+                        Scene is a mobile application that can used in Honolulu to discover upcoming events.
+                    </p>
+                </div>
+            </div>
+
+
+        </section>
+
+        <section class="parallax-scene"></section>
+
+        <section class="process">
+
+            <div class="row">
+                <div class="column one-third">
+                    <ul>
+                        <li>Deliverables</li>
+                        <p>Mobile Application</p>
+                        <li>Programs</li>
+                        <p>Illustrator<br>XD</p>
+                        <li>Vendors</li>
+                        <p>Professional Image | Honolulu, HI<br>Mōno | Honolulu, HI
+                            <br>Bella Forte
+                            Design |
+                            Santa Fe, NM</p>
+                    </ul>
+                </div>
+                <div class="column two-thirds">
+                    <img src="img/scene_wireframe.png" alt="Placeholder Image" class="scale-with-grid">
+                </div>
+            </div>
+
+
+        </section>
+
+        <section class="gallery">
+            <div class="row reverse">
+                <div class="column one-third">
+                    <img src="img/scene_calendar.jpg" alt="Placeholder Image" class="scale-with-grid" />
+                </div>
+                <div class="column two-thirds">
+                    <img src="img/scene_profile.jpg" alt="Placeholder Image" class="scale-with-grid" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="column one-third ">
+                    <img src="img/scene_event.jpg" alt="Placeholder Image" class="scale-with-grid" />
+                </div>
+                <div class="column two-thirds">
+                    <img src="img/scene_home1.jpg" alt="Placeholder Image" class="scale-with-grid" />
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <section class="site-footer" id="contact">
+        <div class="row">
+            <div class="one-half column">
+                <div id="form">
+                    <form action="https://formspree.io/estroupe@hawaii.edu" method="POST">
+                        <label>name</label>
+                        <input type='text' name="name" class="name" placeholder="input" tabinex=1 />
+
+                        <label>email</label>
+                        <input type='text' name="email" class="email" placeholder="input" tabinex=2 />
+
+                        <label>phone</label>
+                        <input type='text' name="email" class="email" placeholder="input" tabinex=3 />
+
+                        <label>message</label>
+                        <textarea name="message" placeholder="input" tabinex=4></textarea>
+
+                        <input type="submit" name="submit" value="send" class="submit" tabinex=4>
+                    </form>
+                </div>
+            </div>
+            <div class="one-half column">
+                <div class="info">
+                    <h3>eafreeman.com</h3>
+                    <h3>emily@eafreeman.com</h3>
+                    <h4>Honolulu | O'ahu | Hawai'i </h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SMOOTH SCROLL JS -->
+    <script src="js/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+
+    <!-- SCROLL OUT SCROLL TRIGGERED ANIMATION -->
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <script>
+        ScrollOut(
+            {
+                threshold: 0.4
+            }
+        );
+    </script>
+
+    <!-- MAIN JS -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

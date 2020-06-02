@@ -1,4 +1,4 @@
-// BOX SIZING
+// // BOX SIZING
 * {
     box-sizing: border-box;
 }
@@ -13,18 +13,20 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: left;
+    align-items: center;
 }
 
 section {
-    // border: 2px solid blue;
-    padding: 20vh;
+    margin: 0;
+    padding-top: 10vh;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    min-height: 50vh;
 }
 
 .container {
-    // border: 1px solid red;
-    width: 100%;
-    max-width: 1000px;
+    width: 100vw;
+    margin: 0 auto;
+    padding: 2em;
 }

@@ -57,13 +57,13 @@ $breakpoint-large: 1250px;
 // IMPORT PARTIALS
 @import "partials/mixins";
 @import "partials/typography";
+@import "partials/img";
 @import "partials/layout";
 @import "partials/grid";
-@import "partials/breakpoints";
-@import "partials/img";
 @import "partials/structure";
 @import "partials/form";
 @import "partials/hover";
 @import "partials/subpages";
 @import "partials/slider";
 @import "partials/menu";
+@import "partials/breakpoints";

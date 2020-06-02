@@ -1,14 +1,5 @@
 img {
     max-width: 100%;
     height: auto;
-}
-
-.sticky {
-        position: sticky;
-        top: 0; //need for setting position
-        z-index: 100; 
-   
-    img {
-        width: 100px;
-    }
+    // border: 1px solid orange;
 }

@@ -10,6 +10,7 @@ $('.single-item').slick({
     slidesToShow: 1,
     lazyLoad: 'progressive',
     speed: 2000,
+    rtl: true,
 });
 
 // next button
