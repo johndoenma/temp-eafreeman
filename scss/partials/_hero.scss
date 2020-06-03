@@ -110,6 +110,8 @@
   }
 }
 
+
+
 .page-work,
 .page-sub {
   .emilynav-wrapper {
@@ -169,3 +171,34 @@
 .page-sub.page-jones .navbox4 { width: 100%; }
 
 
+.page-home,
+.page-work {
+
+  #bottom-nav {
+    display: none;
+  }
+}
+
+.page-sub #bottom-nav {
+  .emilynav-wrapper {
+
+    height: 50vh;
+
+    .title-holder {
+      display: none;
+    }
+
+    .navbox1,
+    .navbox2,
+    .navbox4 {
+      width: 33.3333%;
+      overflow: visible;
+    }
+
+
+    a {
+      display: block;
+    }
+
+  }
+}

@@ -657,6 +657,22 @@ section {
 .page-sub.page-jones .navbox4 {
   width: 100%; }
 
+.page-home #bottom-nav,
+.page-work #bottom-nav {
+  display: none; }
+
+.page-sub #bottom-nav .emilynav-wrapper {
+  height: 50vh; }
+  .page-sub #bottom-nav .emilynav-wrapper .title-holder {
+    display: none; }
+  .page-sub #bottom-nav .emilynav-wrapper .navbox1,
+  .page-sub #bottom-nav .emilynav-wrapper .navbox2,
+  .page-sub #bottom-nav .emilynav-wrapper .navbox4 {
+    width: 33.3333%;
+    overflow: visible; }
+  .page-sub #bottom-nav .emilynav-wrapper a {
+    display: block; }
+
 .site-header {
   min-height: 0;
   padding: 0;
